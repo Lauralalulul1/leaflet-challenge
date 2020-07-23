@@ -1,11 +1,12 @@
 Sub main()
     'Create variables
     Dim firstName, lastName As String
-    Dim winnersNumber As Long
     Dim numberOfRows As Integer
-    Dim First, Second, Third As Long
+    Dim First, Second, Third, winnersNumber As Long
     Dim powerBalls(3) As Long
+    Dim powerBallFound As Boolean
     'set constants
+    powerBallFound = False
     numberOfRows = 1001
     First = 3957481
     Second = 5865187
@@ -31,13 +32,17 @@ Sub main()
                  Range("G4").Value = lastName
                  Range("H4").Value = currentNumber
             Else
-                For pbNumber = 1 To 3
-                    If powerBalls(pbNumber) = currentNumber Then
-                        Range("F5").Value = firstName
-                        Range("G5").Value = lastName
-                        Range("H5").Value = currentNumber
-                    End If
-                Next pbNumber
+                If powerBallFound = False Then
+                    For pbNumber = 1 To 3
+                        If powerBalls(pbNumber) = currentNumber Then
+                            Range("F5").Value = firstName
+                            Range("G5").Value = lastName
+                            Range("H5").Value = currentNumber
+                            powerBallFound = True
+                            Exit For
+                        End If
+                    Next pbNumber
+                End If
         End If
     Next i
 End Sub
