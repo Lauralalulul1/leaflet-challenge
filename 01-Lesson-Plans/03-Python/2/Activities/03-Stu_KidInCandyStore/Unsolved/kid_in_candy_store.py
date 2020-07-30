@@ -8,5 +8,5 @@ allowance = 5
 candy_cart = []
 
 # Print out options
-for i in range(len(candy_list)):
+for i in range(len(candyList)):
     print("[" + str(i) + "] " + candyList[i])
