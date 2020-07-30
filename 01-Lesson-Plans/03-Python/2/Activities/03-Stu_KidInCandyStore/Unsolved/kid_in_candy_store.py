@@ -9,4 +9,4 @@ candy_cart = []
 
 # Print out options
 for i in range(len(candy_list)):
-    print("[" + str(i) + "] " + candy_list[i])
+    print("[" + str(i) + "] " + candyList[i])
