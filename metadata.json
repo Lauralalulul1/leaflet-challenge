@@ -1,58 +1,180 @@
 {
-  type: "FeatureCollection",
-  metadata: {
-    generated: Long Integer,
-    url: String,
-    title: String,
-    api: String,
-    count: Integer,
-    status: Integer
+  "type": "FeatureCollection",
+  "metadata": {
+    "generated": 1606095536000,
+    "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.geojson",
+    "title": "USGS Significant Earthquakes, Past Month",
+    "status": 200,
+    "api": "1.10.3",
+    "count": 4
   },
-  bbox: [
-    minimum longitude,
-    minimum latitude,
-    minimum depth,
-    maximum longitude,
-    maximum latitude,
-    maximum depth
-  ],
-  features: [
+  "features": [
     {
-      type: "Feature",
-      properties: {
-        mag: Decimal,
-        place: String,
-        time: Long Integer,
-        updated: Long Integer,
-        tz: Integer,
-        url: String,
-        detail: String,
-        felt:Integer,
-        cdi: Decimal,
-        mmi: Decimal,
-        alert: String,
-        status: String,
-        tsunami: Integer,
-        sig:Integer,
-        net: String,
-        code: String,
-        ids: String,
-        sources: String,
-        types: String,
-        nst: Integer,
-        dmin: Decimal,
-        rms: Decimal,
-        gap: Decimal,
-        magType: String,
-        type: String
+      "type": "Feature",
+      "properties": {
+        "mag": 6.1,
+        "place": "99 km NW of Constitución, Chile",
+        "time": 1606006496856,
+        "updated": 1606095106555,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000crcq",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000crcq.geojson",
+        "felt": 225,
+        "cdi": 4.9,
+        "mmi": 4.111,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 683,
+        "net": "us",
+        "code": "6000crcq",
+        "ids": ",us6000crcq,",
+        "sources": ",us,",
+        "types": ",dyfi,ground-failure,losspager,moment-tensor,origin,phase-data,shakemap,",
+        "nst": null,
+        "dmin": 1.016,
+        "rms": 0.86,
+        "gap": 14,
+        "magType": "mww",
+        "type": "earthquake",
+        "
+e": "M 6.1 - 99 km NW of Constitución, Chile"
       },
-      geometry: {
-        type: "Point",
-        coordinates: [
-          longitude,
-          latitude,
-          depth
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.0706,
+          -34.6189,
+          19.65
         ]
       },
-      id: String
+      "id": "us6000crcq"
     },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 3.6,
+        "place": "10 km S of Bliss Corner, Massachusetts",
+        "time": 1604844606959,
+        "updated": 1606089601063,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000cc4d",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000cc4d.geojson",
+        "felt": 29355,
+        "cdi": 6,
+        "mmi": 4.556,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 1,
+        "sig": 799,
+        "net": "us",
+        "code": "7000cc4d",
+        "ids": ",at00qjhe0w,us7000cc4d,",
+        "sources": ",at,us,",
+        "types": ",dyfi,impact-link,losspager,moment-tensor,origin,phase-data,shakemap,",
+        "nst": null,
+        "dmin": 0.234,
+        "rms": 0.72,
+        "gap": 162,
+        "magType": "mwr",
+        "type": "earthquake",
+        "title": "M 3.6 - 10 km S of Bliss Corner, Massachusetts"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.9538,
+          41.5212,
+          10
+        ]
+      },
+      "id": "us7000cc4d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5,
+        "place": "2 km E of Big Lake, Alaska",
+        "time": 1604751791989,
+        "updated": 1605962000155,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak020ec6yfo7",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ak020ec6yfo7.geojson",
+        "felt": 2236,
+        "cdi": 5,
+        "mmi": 4.06,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 1,
+        "sig": 885,
+        "net": "ak",
+        "code": "020ec6yfo7",
+        "ids": ",ak020ec6yfo7,at00qjfeen,us7000cbsb,",
+        "sources": ",ak,at,us,",
+        "types": ",dyfi,ground-failure,impact-link,losspager,moment-tensor,oaf,origin,phase-data,shakemap,",
+        "nst": null,
+        "dmin": null,
+        "rms": 0.59,
+        "gap": null,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 5.0 - 2 km E of Big Lake, Alaska"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -149.9095,
+          61.5218,
+          39
+        ]
+      },
+      "id": "ak020ec6yfo7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 7,
+        "place": "15 km NNE of Néon Karlovásion, Greece",
+        "time": 1604058687563,
+        "updated": 1605794063730,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000c7y0",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000c7y0.geojson",
+        "felt": 874,
+        "cdi": 7.6,
+        "mmi": 6.96,
+        "alert": "orange",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 1664,
+        "net": "us",
+        "code": "7000c7y0",
+        "ids": ",us7000c7y0,",
+        "sources": ",us,",
+        "types": ",dyfi,finite-fault,general-text,ground-failure,losspager,moment-tensor,origin,phase-data,shakemap,",
+        "nst": null,
+        "dmin": 1.505,
+        "rms": 0.76,
+        "gap": 18,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 7.0 - 15 km NNE of Néon Karlovásion, Greece"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.7901,
+          37.9175,
+          21
+        ]
+      },
+      "id": "us7000c7y0"
+    }
+  ],
+  "bbox": [
+    -149.9095,
+    -34.6189,
+    10,
+    26.7901,
+    61.5218,
+    39
