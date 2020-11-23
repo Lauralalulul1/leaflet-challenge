@@ -19,11 +19,11 @@
 
 
 //Create map object slack
-var mapProperties = L.map("map", {
+var myMap = L.map("map", {
     center: [37.7749, -122.4194],
     zoom: 8
-  }
-var myMap = L.map("map", mapProperties)
+  });
+
   
   // Add tile layer slack
 L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
